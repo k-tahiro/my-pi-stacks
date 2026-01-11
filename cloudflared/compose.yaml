@@ -5,7 +5,10 @@ services:
     command: tunnel run pi-home
     env_file: ../stack.env
     networks:
+      - cloudflared
       - proxy
+
 networks:
+  cloudflared:
   proxy:
     external: true

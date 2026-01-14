@@ -10,6 +10,5 @@ services:
 
 networks:
   cloudflared:
-    external: true
   proxy:
     external: true

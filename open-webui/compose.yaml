@@ -8,11 +8,11 @@ services:
       - open-webui:/app/backend/data
     env_file: ../stack.env
     networks:
-      - proxy
+      - cloudflared
 
 volumes:
   open-webui:
 
 networks:
-  proxy:
+  cloudflared:
     external: true

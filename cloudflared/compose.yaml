@@ -6,9 +6,7 @@ services:
     env_file: ../stack.env
     networks:
       - cloudflared
-      - proxy
 
 networks:
   cloudflared:
-  proxy:
     external: true

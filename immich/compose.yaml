@@ -32,7 +32,7 @@ services:
       disable: false
     networks:
       - immich
-      - proxy
+      - cloudflared
 
   immich-machine-learning:
     container_name: immich_machine_learning
@@ -84,5 +84,5 @@ volumes:
 
 networks:
   immich:
-  proxy:
+  cloudflared:
     external: true

@@ -4,3 +4,4 @@ services:
   playit:
     image: ghcr.io/playit-cloud/playit-agent:0.16
     network_mode: host
+    env_file: ../stack.env
